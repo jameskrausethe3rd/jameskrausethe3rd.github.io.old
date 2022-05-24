@@ -1,30 +1,88 @@
 <!doctype html>
 
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <title>James Krause</title>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+      
+    <body class="blue lighten-2">
+        <div class="container">
+            <nav class="blue darken-3">
+                <div class="nav-wrapper">
+                    <a href="#!" class="right brand-logo">James Krause</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="left hide-on-med-and-down">
+                        <li><a href="sass.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="sass.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
 
-    <title>A Basic HTML5 Template</title>
-    <meta name="description" content="A simple HTML5 Template for new projects.">
-    <meta name="author" content="SitePoint">
+            <ul class="collapsible white">
+                <li>
+                    <div class="collapsible-header">Black Jack</div>
+                    <div class="collapsible-body">
+                        <div>
+                            <p>Black Jack game made with Javascript. Cookies are used to save information about the user on the device such as amount of Wins, Losses, Money, etc. 
+                                Firebase is used to display the names of all players currently on the site and if their name is clicked on, shows their current hand. Features animated 
+                                card flips and modals. The user's own name is shown in yellow and they can easily change their display name.
+                            </p>
+                        </div>
+                        <div class="card hoverable">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="imgs/BlackJack/newUser.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                <p><a href="#">This is a link</a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+              </ul>
+    
+            
 
-    <meta property="og:title" content="A Basic HTML5 Template">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-    <meta property="og:description" content="A simple HTML5 Template for new projects.">
-    <meta property="og:image" content="image.png">
+            <div class="card hoverable">
+                <div class="card-content">
+                    <span class="card-title">Lorem Ipsum</span>
+                    <p>Some placeholder text
+                    </p>
+                </div>
+            </div>
+        </div>
 
-    <link rel="icon" href="/favicon.ico">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
+            
 
-</head>
 
-<body>
-    <h1>James Krause</h1>
-    <script src="js/scripts.js"></script>
+                          
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
