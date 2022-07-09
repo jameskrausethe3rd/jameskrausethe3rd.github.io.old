@@ -19,60 +19,224 @@
                     <a href="#!" class="right brand-logo">James Krause</a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="left hide-on-med-and-down">
-                        <li><a href="sass.html">About</a></li>
+                        <li><a href="index.html">About</a></li>
                         <li><a href="projects.html">Projects</a></li>
                     </ul>
                 </div>
             </nav>
             
             <ul class="sidenav" id="mobile-demo">
-                <li><a href="sass.html">About</a></li>
+                <li><a href="index.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
             </ul>
+
+            <ul class="collapsible white">
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">http</i>Black Jack</div>
+                    <div class="collapsible-body">
+                        <div>
+                            <p class="text-bold">
+                                Black Jack game made with Javascript. Cookies are used to save information about the user on the device such as amount of Wins, Losses, Money, etc. 
+                                Firebase is used to display the names of all players currently on the site and if their name is clicked on, shows their current hand. Features animated 
+                                card flips and modals. The user's own name is shown in yellow and they can easily change their display name.
+                            </p>
+                        </div>
+                        <div>
+                            <p style="display: inline;">
+                                <a href="https://github.com/jameskrausethe3rd/BlackJack">Github</a> | <a href="http://jameskrausethe3rd.github.io/BlackJack">Website</a>
+                            </p>
+                        </div>
+                        <div>
+                            <blockquote>Here you can see that there is a modal on the screen notifying the user that they are a new visitor. Because they are new, they are given a bank
+                                balance of 1000. Uses cookies to determine if they are a new user or not.
+                            </blockquote>
+                        </div>
+                        <div class="card hoverable">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="imgs/BlackJack/newUser.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Details<i class="material-icons right">more_vert</i></span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Details<i class="material-icons right">close</i></span>
+                                <p>One of the issues with the modal that I have not been able to figure out, is to close the modal. In most cases, you can click the X in the top right, or click any where
+                                    on the page and it will close. But after having some friends and family, there were two cases of clicking any where on the page would not close the page. Unfortunately, 
+                                    it was on an Android with Chrome, and an iPhone with Safari.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <blockquote>After the user begins a game, they are greeted with this screen. This allows the player to place a wager using money from their bank. It
+                                will check if the amount they are trying to bet is more than what they have and tell them if they don't have enought credits.
+                            </blockquote>
+                        </div>
+                        <div class="card hoverable">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="imgs/BlackJack/betScreen.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                <p>One of the harder things to implement was in the use case of someone placing a bet, say $50, but then changing it to a custom amount. With the original code, it would take 
+                                    out both the custom amount and the preset amount, causing the bank to possibly go negative. Now, it just resets the bet and then applies the custom bet.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <blockquote>This is what the player will see when playing the game. In the top right is their bank, how much they wagered, and the value of their current
+                                hand. The cards animate from the face down card on the right and flip to reveal the value of the card.
+                            </blockquote>
+                        </div>
+                        <div class="card hoverable">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="imgs/BlackJack/gameScreen.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                <p>For a while, it was hard to decide how I wanted the cards to go onto the table and how I wanted to animate it. After some research, I found a sleek implementation of a flip
+                                     card animation and applied it to my use case. Using an offset variable in Javascript, it uses the same animation for all cards but with different position arguments.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <blockquote>When you win, lose, or wash, this modal will display letting you know if you the outcome of the game. From there, you will be able to start 
+                                a new game or quit and go back to the main menu.
+                            </blockquote>
+                        </div>
+                        <div class="card hoverable">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="imgs/BlackJack/gameOver.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <blockquote>The stats button saves information about the player, such as how many wins they have, their current streak of wins, etc. and using cookies on
+                                the user's device, keeps the information persistent between visits.
+                            </blockquote>
+                        </div>
+                        <div class="card hoverable">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="imgs/BlackJack/statsScreen.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <blockquote>When you first go to the website, you are given a randomly generated name. All currently connected players will show up under the current
+                                players area. You can change your name and it will update for all other users. If you create an account (simple email/password), your name will 
+                                stay persistent, rather than randomly generating it.
+                            </blockquote>
+                        </div>
+                        <div class="card hoverable">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="imgs/BlackJack/otherUser.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">place</i>Intuitive Sign up</div>
+                  <div class="collapsible-body">
+                    <div>
+                        <p class="text-bold">
+                            A site made to infuriate anyone who tries to "sign-up" for an account. Features a bad user interface, as well as random drop-down menus and more!
+                        </p>
+                    </div>
+                    <div>
+                        <p style="display: inline;">
+                            <a href="https://github.com/jameskrausethe3rd/IntuitiveSignUp">Github</a> | <a href="https://jameskrausethe3rd.github.io/IntuitiveSignUp/">Website</a>
+                        </p>
+                    </div>
+                    <div>
+                        <blockquote>This is what the site will look like. As you can see, it doesn't look the best and is hard to use.
+                        </blockquote>
+                    </div>
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="imgs/IntuitiveSignUp/MainScreen.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Details<i class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Details<i class="material-icons right">close</i></span>
+                            <p>For the first and last name, there is only ten characters available. You can only enter the characters using a drop-down menu and the order is in qwerty layout. The phone number
+                                is entered using a slider that goes from 0 to 99999999999, making it nearly impossible to enter the correct number. For the birthdate, it starts at 1900/1/1 and goes up to the current
+                                day, but randomizes the order of the dates.
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Note to Key</div>
+                  <div class="collapsible-body">
+                    <div>
+                        <p class="text-bold">
+                            A program made in Python that takes the loudest frequency from a given input and maps those frequencies to a keystroke or button press. You can save 
+                            and load profiles for different environments.
+                        </p>
+                    </div>
+                    <div>
+                        <p style="display: inline;">
+                            <a href="https://github.com/jameskrausethe3rd/notetokey">Github</a>
+                        </p>
+                    </div>
+                    <div>
+                        <blockquote>This is the screen you will see when you first open the program. The UI is created using Tkinter and has pretty basic functions.
+                        </blockquote>
+                    </div>
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="imgs/NoteToKey/MainScreen.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Details<i class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Details<i class="material-icons right">close</i></span>
+                            <p>There is a lot of small indicators in the UI to let the user know what is currently happening. When you select an input, it has a tick mark next to it. When you press Start, it is highlighted in green and any inputs
+                                that get pressed also turn green. The title bar will update with the name of the current mapping profile to give a better indication of the current configuration.
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
     
-            <!-- <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="imgs/BlackJack.png">
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                  <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                </div>
-            </div> -->
+            
 
             <div class="card hoverable">
                 <div class="card-content">
-                    <span class="card-title">Black Jack with Javascript</span>
-                    <p>Black Jack game made with Javascript. Cookies are used to save information about the user on the device such as amount of Wins, Losses, Money, etc. 
-                        Firebase is used to display the names of all players currently on the site and if their name is clicked on, shows their current hand. Features animated 
-                        card flips and modals. The user's own name is shown in yellow and they can easily change their display name.
+                    <span class="card-title">Bottom Text</span>
+                    <p>Some placeholder text
                     </p>
-                    <a href="https://github.com/jameskrausethe3rd/BlackJack">Github</a>
-                </div>
-                <div class="card-tabs">
-                    <ul class="tabs tabs-fixed-width">
-                        <li class="tab"><a class="active" href="#test7">New User </a></li>
-                        <li class="tab"><a href="#test8">Make Bet</a></li>
-                        <li class="tab"><a href="#test9">Play</a></li>
-                        <li class="tab"><a href="#test10">Outcome</a></li>
-                        <li class="tab"><a href="#test11">Stats</a></li>
-                        <li class="tab"><a href="#test12">Friends</a></li>
-                    </ul>
-                </div>
-                <div class="card-content grey lighten-4">
-                    <div id="test7"><img class="responsive-img" src="imgs/BlackJack/newUser.png"></div>
-                    <div id="test8"><img class="responsive-img" src="imgs/BlackJack/betScreen.png"></div>
-                    <div id="test9"><img class="responsive-img" src="imgs/BlackJack/gameScreen.png"></div>
-                    <div id="test10"><img class="responsive-img" src="imgs/BlackJack/gameOver.png"></div>
-                    <div id="test11"><img class="responsive-img" src="imgs/BlackJack/statsScreen.png"></div>
-                    <div id="test12"><img class="responsive-img" src="imgs/BlackJack/otherUser.png"></div>
                 </div>
             </div>
-
         </div>
 
 
