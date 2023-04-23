@@ -1,0 +1,26 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-subtitle>{{ section }}</mat-card-subtitle>
+      <mat-card-title>{{ text_title }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{ text_summary }}</p>
+      <p>{{ text_content }}</p>
+      <mat-divider></mat-divider>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+    <mat-card-footer>
+        <section class="example-section">
+            <mat-progress-bar
+                class="example-margin"
+                [color]="color"
+                [mode]="mode"
+                [value]="value">
+            </mat-progress-bar>
+        </section>
+    </mat-card-footer>
+</mat-card>
+  
