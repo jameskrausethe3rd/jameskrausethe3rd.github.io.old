@@ -1,5 +1,10 @@
 <div [@listAnimation]="items.length">
     <div *ngFor="let item of items">
-        <app-main-text-panel></app-main-text-panel>
+        <app-main-text-panel
+            [text_title]="item.currentTitle"
+            [section]="item.section"
+            [text_summary]="item.text_summary"
+            [text_content]="item.text_content">
+        </app-main-text-panel>
     </div>
 </div>
