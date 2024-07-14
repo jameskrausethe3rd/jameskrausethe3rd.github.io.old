@@ -1,0 +1,11 @@
+<mat-card appearance="outlined">
+    <mat-card-header>
+        <mat-card-title data-aos="fade-up" data-aos-duration="750" data-aos-delay="250">Education</mat-card-title>
+        <mat-card-subtitle data-aos="fade-up" data-aos-duration="750" data-aos-delay="500">Minnesota State University, Mankato</mat-card-subtitle>
+        <mat-card-subtitle data-aos="fade-up" data-aos-duration="750" data-aos-delay="500">BS in Computer Information Technology</mat-card-subtitle>
+    </mat-card-header>
+    <mat-list role="list">
+        <mat-list-item data-aos="fade-up" data-aos-duration="750" data-aos-delay="500">May 2022</mat-list-item>
+        <mat-list-item role="listitem" *ngFor="let educationPoint of educationPoints; let i = index" data-aos="fade-left" data-aos-duration="750" [attr.data-aos-delay]="1000 + i * 100">{{educationPoint}}</mat-list-item>
+    </mat-list>
+</mat-card>
