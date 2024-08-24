@@ -1,15 +1,20 @@
 .container {
+    height: 100vh;
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-width: 1000px;
-    margin: 0 auto; /* Centers the container horizontally within its parent */
-    padding: 20px; /* Optional: Add some padding for spacing */
-    box-sizing: border-box; /* Ensures padding is included in the total width */
+    align-items: center; /* center horizontally */
 }
 
 .container > * {
-    width: 100%; /* Make children take full width of the container */
-    max-width: 1000px; /* Ensure children do not exceed 1000px */
-    margin: 5px 0; /* Adds spacing above and below each child */
+    scroll-snap-align: center;
+    min-height: 100%;
+    max-width: 100%;
+    width: 100%; /* Ensure all children have the same width */
+    display: grid;
+    place-items: center;
+    color: #000a;
+    padding: 1em;
+    box-sizing: border-box; /* Include padding in the element's width and height */
+    flex-shrink: 0; /* Prevent the element from shrinking */
 }

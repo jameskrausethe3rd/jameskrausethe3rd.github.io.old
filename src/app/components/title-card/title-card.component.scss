@@ -1,5 +1,5 @@
 :host {
-    background-color: #35524A;
+    background-color: #314CB6;
     color: white;
 }
 
@@ -13,7 +13,6 @@
 
 .title {
     font-size: 8rem;
-    text-align: center;
     opacity: 0;
 }
 
@@ -26,9 +25,8 @@
 .subtitles p {
     margin: 0;
     align-items: center; /* Aligns items vertically centered */
-    font-size: 2em;
+    font-size: 2.5rem;
     opacity: 0;
-    line-height: 1
 }
 
 .subtitles i.material-icons {
@@ -40,15 +38,20 @@
 @media (max-width: 768px) {
     .title {
         font-size: 3rem;
+        text-align: center;
     }
 
     .subtitles {
-        display: block;
-        justify-content: center;
+        gap: 18px;
+    }
+
+    .subtitles i.material-icons {
+        font-size: 12px; /* Adjust icon size */
+        margin-right: 2px; /* Space between icon and text */
     }
 
     .subtitles p {
-        margin: 15px;
+        margin: 0;
         font-size: 1rem;
     }
 }

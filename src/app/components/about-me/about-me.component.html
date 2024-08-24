@@ -1,11 +1,6 @@
-<mat-card appearance="outlined">
-    <mat-card-header>
-        <mat-card-title data-aos="fade-up" data-aos-duration="750" data-aos-delay="250">About Me</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-        <mat-list role="list">
-            <p data-aos="fade-up" data-aos-duration="750" data-aos-delay="500">November 2022 – Current</p>
-            <p role="listitem" *ngFor="let aboutMePoint of aboutMePoints; let i = index" data-aos="fade-left" data-aos-duration="750" [attr.data-aos-delay]="1000 + i * 100">{{aboutMePoint}}</p>
-        </mat-list>
-    </mat-card-content>
-</mat-card>
+<div>
+    <h1 class="title" #aboutmecardcomponent>About Me</h1>
+    <div class="subtitles" #subtitledivcomponent>
+        <p role="listitem" *ngFor="let aboutMePoint of aboutMePoints; let i = index">{{aboutMePoint}}</p>
+    </div>
+</div>

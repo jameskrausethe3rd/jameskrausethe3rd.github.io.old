@@ -12,6 +12,9 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatCard, MatCardContent, MatCardHeader, MatCardTitle, MatCardSubtitle } from '@angular/material/card';
 import { MatList, MatListItem } from '@angular/material/list';
 import { ContainerComponent } from './components/container/container.component';
+import { TitleCardComponent } from './components/title-card/title-card.component';
+import { HobbiesComponent } from './components/hobbies/hobbies.component';
+import { HobbyCardComponent } from './components/hobby-card/hobby-card.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,9 @@ import { ContainerComponent } from './components/container/container.component';
     PersonalProjectsComponent,
     NavbarComponent,
     ContainerComponent,
+    TitleCardComponent,
+    HobbiesComponent,
+    HobbyCardComponent,
   ],
   imports: [
     BrowserModule,

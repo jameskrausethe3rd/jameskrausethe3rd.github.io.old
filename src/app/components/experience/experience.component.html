@@ -1,10 +1,17 @@
-<mat-card appearance="outlined">
+<mat-card appearance="outlined" #experiencecomponent>
     <mat-card-header>
-        <mat-card-title data-aos="fade-up" data-aos-duration="750" data-aos-delay="250">Experience</mat-card-title>
-        <mat-card-subtitle data-aos="fade-up" data-aos-duration="750" data-aos-delay="500">Software Engineer at Open Systems international</mat-card-subtitle>
+        <mat-card-title>Experience</mat-card-title>
     </mat-card-header>
-    <mat-list role="list">
-        <mat-list-item data-aos="fade-up" data-aos-duration="750" data-aos-delay="500">November 2022 – Current</mat-list-item>
-        <mat-list-item role="listitem" *ngFor="let jobOnePoint of jobOnePoints; let i = index" data-aos="fade-left" data-aos-duration="750" [attr.data-aos-delay]="1000 + i * 100">{{jobOnePoint}}</mat-list-item>
-    </mat-list>
+    <mat-card-content>
+        <mat-card-subtitle>Company</mat-card-subtitle>
+        <p>Open Systems international</p>
+        <mat-card-subtitle>Job Title</mat-card-subtitle>
+        <p>Software Engineer at Open Systems international</p>
+        <mat-card-subtitle>Time Employed</mat-card-subtitle>
+        <p>November 2022 – Current</p>
+        <mat-card-subtitle>Duties performed</mat-card-subtitle>
+        <mat-list role="list">
+            <p class="experience-item" *ngFor="let jobOnePoint of jobOnePoints; let i = index">{{jobOnePoint}}</p>
+        </mat-list>
+    </mat-card-content>
 </mat-card>

@@ -1,0 +1,107 @@
+:host {
+    background-color: #0F1108;
+    color: white;
+}
+
+:host > * {
+    color: white;
+}
+
+.title {
+    font-size: 8rem;
+    text-align: center;
+}
+
+.schoolContainer {
+    overflow: hidden;
+    margin-top: 2vh;
+    text-align: center;
+}
+
+.titleContainer {
+    overflow: hidden;
+    border-bottom: .2rem solid;   
+    display: inline-block;
+}
+
+.schoolTitle {
+    opacity: 0; /* Make the text invisible at the start */
+    font-size: 3rem; /* Adjust as needed */
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+
+.container {
+    width: 100%;
+    margin-top: 5vh;
+    justify-content: left;
+}
+
+.svgContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.svgContainer svg{
+    align-items: center;
+    width: 20vw;
+    position: relative;
+    margin: 0;
+}
+
+.svgContainer path {
+    opacity: 0;
+}
+
+.strokeLogo {
+    right: -10vw;
+    z-index: 0;
+}
+
+.fillLogo {
+    z-index: 1;
+    left: -10vw;
+    opacity: 1;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .schoolContainer {
+        overflow: hidden;
+    }
+    
+    .titleContainer {
+        overflow: hidden;
+        border-bottom: .2rem solid;   
+        display: inline-block;
+        margin: 0;
+    }
+    
+    .schoolTitle {
+        opacity: 0;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 4px;
+    }
+
+    .svgContainer svg{
+        align-items: center;
+        width: 40vw;
+        position: relative;
+        margin: 0;
+    }
+
+    .strokeLogo {
+        right: -20vw;
+        z-index: 1;
+    }
+    
+    .fillLogo {
+        z-index: 0; /* Lower z-index to ensure it is behind element1 */
+        left: -20vw; /* Adjust positioning as needed */
+    }
+}
